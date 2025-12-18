@@ -1,62 +1,64 @@
 :root {
-  --bg-dark: #0a192f;
-  --bg-card: #112240;
-  --text-primary: #e6f1ff;
-  --text-secondary: #8892b0;
-  --accent: #64ffda;
-  --danger: #ef4444; /* Red for missed */
-  --success: #10b981; /* Green for success */
-  --border: #233554;
-  --hover: #1d2d50;
+    --bg-dark: #0a192f;
+    --bg-card: #112240;
+    --text-primary: #e6f1ff;
+    --text-secondary: #8892b0;
+    --accent: #64ffda;
+    --danger: #ef4444;
+    /* Red for missed */
+    --success: #10b981;
+    /* Green for success */
+    --border: #233554;
+    --hover: #1d2d50;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-primary);
-  -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
 .app-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
-  color: var(--text-primary);
-  margin: 0;
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin: 0;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  padding: 0.6rem 1.2rem;
-  font-weight: 600;
-  transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
-  background-color: transparent;
-  border: 1px solid var(--accent);
-  color: var(--accent);
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
 }
 
 .btn-primary:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(100, 255, 218, 0.1);
 }
 
 .btn-save {
@@ -73,34 +75,35 @@ button {
 
 /* Table Styles */
 .table-container {
-  overflow-x: auto;
-  background-color: var(--bg-card);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    overflow-x: auto;
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .hackathon-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 900px;
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
 }
 
-.hackathon-table th, .hackathon-table td {
-  padding: 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--border);
+.hackathon-table th,
+.hackathon-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
 }
 
 .hackathon-table th {
-  color: var(--accent);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
 }
 
 .hackathon-table tr:hover {
-  background-color: var(--hover);
+    background-color: var(--hover);
 }
 
 .hackathon-name {
@@ -114,6 +117,7 @@ button {
     color: var(--accent);
     text-decoration: none;
 }
+
 .event-link:hover {
     text-decoration: underline;
 }
@@ -124,7 +128,8 @@ button {
 }
 
 .status-missed {
-    background-color: rgba(239, 68, 68, 0.15) !important; /* Red background */
+    background-color: rgba(239, 68, 68, 0.15) !important;
+    /* Red background */
     border-left: 4px solid var(--danger) !important;
 }
 
@@ -137,6 +142,7 @@ button {
     font-size: 0.9rem;
     color: var(--text-primary);
 }
+
 .status {
     font-size: 0.8rem;
     color: var(--text-secondary);
@@ -149,9 +155,11 @@ button {
     font-size: 1.2rem;
     color: var(--text-secondary);
 }
+
 .btn-icon:hover {
     color: var(--accent);
 }
+
 .btn-icon.delete:hover {
     color: var(--danger);
 }
@@ -167,7 +175,7 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +192,7 @@ button {
     max-height: 90vh;
     overflow-y: auto;
     border: 1px solid var(--border);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .form-group {
@@ -198,7 +206,11 @@ label {
     font-size: 0.9rem;
 }
 
-input[type="text"], input[type="url"], input[type="number"], input[type="date"], select {
+input[type="text"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+select {
     width: 100%;
     padding: 0.8rem;
     background-color: var(--bg-dark);
@@ -208,7 +220,8 @@ input[type="text"], input[type="url"], input[type="number"], input[type="date"],
     box-sizing: border-box;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: var(--accent);
 }
@@ -261,10 +274,65 @@ input:focus, select:focus {
     margin-top: 2rem;
 }
 
+
 .error-message {
     background-color: rgba(239, 68, 68, 0.1);
     color: var(--danger);
     padding: 0.8rem;
     border-radius: 4px;
     margin-bottom: 1rem;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-btn.active {
+    background: white;
+    color: var(--primary-color, #0a192f);
+    /* Fallback or var */
+    font-weight: bold;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.modal-content textarea {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--bg-dark);
+    /* Match input bg */
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-primary);
+    box-sizing: border-box;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.modal-content textarea:focus {
+    outline: none;
+    border-color: var(--accent);
 }

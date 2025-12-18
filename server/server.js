@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors'); // Import cors
 const hackathonRoutes = require('./routes/hackathons');
+const teamMemberRoutes = require('./routes/teamMembers');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -15,6 +16,7 @@ app.use(express.json());
 // Routes
 // Routes
 app.use('/api/hackathons', hackathonRoutes);
+app.use('/api/members', teamMemberRoutes);
 
 // Health/Connection Check
 app.get('/api/health', (req, res) => {
